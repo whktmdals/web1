@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    background:skyblue;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .header {
+    flex-grow: 1;
+    display: flex;
+}
+
+.wrapper .main > * {
+    width: 0;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.wrapper .main div:first-child {
+    background: deepskyblue;
+}
+
+.wrapper .main div:last-child {
+    background: white;
+
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.wrapper .main div:last-child button:nth-child(3) {
+    background: deepskyblue;
+}
+
+.wrapper .main div:last-child button:last-child {
+    background: salmon;
+}
+
+.wrapper .footer {
+    height: 50px;
+    background:silver;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
